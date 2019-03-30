@@ -8,6 +8,8 @@ import { LoginModule } from './login/login.module';
 import { ContactModule } from './contact/contact.module';
 import { MovieListComponent } from './movie-list/movie-list.component';
 
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatListModule } from "@angular/material/list";
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { MovieListComponent } from './movie-list/movie-list.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     LoginModule,
-    ContactModule
+    ContactModule,
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
