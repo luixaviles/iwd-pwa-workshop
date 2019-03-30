@@ -10,6 +10,8 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { MatListModule } from "@angular/material/list";
     LoginModule,
     ContactModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
